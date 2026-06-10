@@ -36,58 +36,57 @@
 </head>
 <body class="text-slate-800 bg-white selection:bg-amber-500 selection:text-slate-900">
 
-    <!-- Navigation -->
-    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 bg-slate-950/95 md:bg-slate-950/90 py-4 md:py-5 border-b border-slate-900">
+     <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 bg-white py-4">
         <div class="container mx-auto px-4 md:px-8 max-w-7xl flex justify-between items-center">
             
-            <!-- Logo Section matching Chat GPT Image exactly -->
             <!-- Logo -->
             <a href="#" class="flex items-center gap-2 z-50 relative">
                 <img src="assets/josfusek-logo.png" alt="Josfusek Logo" class="h-14 w-auto object-contain">
                 <div class="leading-tight">
-                    <span class="block text-lg md:text-xl font-extrabold tracking-tight text-white uppercase">JOSEFUSEK</span>
+                    <span class="block text-xl md:text-2xl font-bold tracking-tight text-slate-900">JOSFUSEK</span>
                     <span class="block text-[0.65rem] md:text-xs font-semibold tracking-[0.2em] text-slate-500">Global Limited</span>
                 </div>
             </a>
 
             <!-- Desktop Nav -->
             <div class="hidden lg:flex items-center space-x-8">
-                <a href="index.html" class="text-sm font-bold tracking-wide hover:text-amber-500 transition-colors text-slate-300">Home</a>
-                <a href="#story" class="text-sm font-bold tracking-wide text-amber-500 border-b-2 border-amber-500 pb-1">About Us</a>
-                <a href="#services" class="text-sm font-bold tracking-wide hover:text-amber-500 transition-colors text-slate-300">Services</a>
-                <a href="#projects" class="text-sm font-bold tracking-wide hover:text-amber-500 transition-colors text-slate-300">Projects</a>
-                <a href="#why-us" class="text-sm font-bold tracking-wide hover:text-amber-500 transition-colors text-slate-300">Why Us</a>
-                <a href="#contact" class="text-sm font-bold tracking-wide hover:text-amber-500 transition-colors text-slate-300">Contact Us</a>
+                <a href="index.html" class="text-xs font-bold tracking-wide transition-colors text-amber-500 border-b-2 border-amber-500 pb-1">HOME</a>
+                <a href="about.html" class="text-xs font-bold tracking-wide hover:text-amber-500 transition-colors text-slate-700">ABOUT US</a>
+                <a href="#services" class="text-xs font-bold tracking-wide hover:text-amber-500 transition-colors text-slate-700">SERVICES</a>
+                <a href="#projects" class="text-xs font-bold tracking-wide hover:text-amber-500 transition-colors text-slate-700">PROJECTS</a>
+                <a href="#testimonials" class="text-xs font-bold tracking-wide hover:text-amber-500 transition-colors text-slate-700">TESTIMONIALS</a>
+                <a href="#contact" class="text-xs font-bold tracking-wide hover:text-amber-500 transition-colors text-slate-700">CONTACT US</a>
             </div>
 
             <!-- CTA & Mobile Toggle -->
             <div class="flex items-center gap-4">
-                <a href="#contact" class="hidden lg:flex items-center gap-2 bg-amber-500 hover:bg-amber-600 text-slate-950 px-6 py-3 rounded text-sm font-black tracking-wide transition-all shadow-lg shadow-amber-500/10">
-                    GET A QUOTE →
-                </a>
+                <button class="hidden lg:flex items-center gap-2 bg-amber-500 hover:bg-amber-600 text-white px-6 py-3 rounded text-sm font-medium tracking-wide transition-colors">
+                    GET A QUOTE
+                    <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                </button>
                 
-                <button id="mobile-menu-btn" class="lg:hidden p-2 text-white z-50 relative">
+                <button id="mobile-menu-btn" class="lg:hidden p-2 text-slate-900 z-50 relative">
                     <i data-lucide="menu" id="menu-icon" class="w-7 h-7"></i>
                 </button>
             </div>
         </div>
 
         <!-- Mobile Menu -->
-        <div id="mobile-menu" class="fixed inset-0 bg-slate-950 z-40 transition-transform duration-300 transform translate-x-full lg:hidden flex flex-col justify-center items-center">
+        <div id="mobile-menu" class="fixed inset-0 bg-white z-40 transition-transform duration-300 transform translate-x-full lg:hidden flex flex-col justify-center items-center">
             <div class="flex flex-col space-y-8 items-center text-center">
-                <a href="index.html" class="mobile-link text-2xl font-bold text-slate-100 hover:text-amber-500">Home</a>
-                <a href="#story" class="mobile-link text-2xl font-bold text-amber-500">About Us</a>
-                <a href="#services" class="mobile-link text-2xl font-bold text-slate-100 hover:text-amber-500">Services</a>
-                <a href="#projects" class="mobile-link text-2xl font-bold text-slate-100 hover:text-amber-500">Projects</a>
-                <a href="#why-us" class="mobile-link text-2xl font-bold text-slate-100 hover:text-amber-500">Why Us</a>
-                <a href="#contact" class="mobile-link text-2xl font-bold text-slate-100 hover:text-amber-500">Contact Us</a>
-                <a href="#contact" class="bg-amber-500 text-slate-950 px-8 py-4 rounded text-lg font-black w-full max-w-xs mt-4 block text-center">
-                    GET A QUOTE →
-                </a>
+                <a href="index.html" class="mobile-link text-2xl font-bold text-slate-800 hover:text-amber-500">HOME</a>
+                <a href="about.html" class="mobile-link text-2xl font-bold text-slate-800 hover:text-amber-500">ABOUT US</a>
+                <a href="#services" class="mobile-link text-2xl font-bold text-slate-800 hover:text-amber-500">SERVICES</a>
+                <a href="#projects" class="mobile-link text-2xl font-bold text-slate-800 hover:text-amber-500">PROJECTS</a>
+                <a href="#testimonials" class="mobile-link text-2xl font-bold text-slate-800 hover:text-amber-500">TESTIMONIALS</a>
+                <a href="#contact" class="mobile-link text-2xl font-bold text-slate-800 hover:text-amber-500">CONTACT US</a>
+                <button class="bg-amber-500 text-white px-8 py-4 rounded text-lg font-bold w-full max-w-xs mt-4">
+                    GET A QUOTE
+                </button>
             </div>
         </div>
     </nav>
-
     <!-- Hero Section -->
     <section class="relative h-[95svh] min-h-[650px] flex items-center pt-24">
         <!-- Background Construction Site at sunset -->
@@ -271,7 +270,7 @@
             </div>
 
             <!-- 7 Grid items verbatim as shown on ChatGPT Image Jun 10, 2026, 02_33_30 PM.png -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-6 text-center">
+            <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6 text-center">
                 
                 <!-- 1. Excellence -->
                 <div class="p-4 flex flex-col justify-start items-center">
@@ -307,15 +306,6 @@
                     </div>
                     <h4 class="font-extrabold text-slate-900 text-sm mb-2">Integrity</h4>
                     <p class="text-xs text-slate-500 leading-relaxed">We operate with honesty, transparency and strong ethics.</p>
-                </div>
-
-                <!-- 5. Teamwork -->
-                <div class="p-4 flex flex-col justify-start items-center">
-                    <div class="w-12 h-12 rounded-full border border-slate-200 flex items-center justify-center text-slate-600 mb-4">
-                        <i data-lucide="users" class="w-6 h-6 text-slate-500"></i>
-                    </div>
-                    <h4 class="font-extrabold text-slate-900 text-sm mb-2">Teamwork</h4>
-                    <p class="text-xs text-slate-500 leading-relaxed">We achieve more through collaboration and unity.</p>
                 </div>
 
                 <!-- 6. CSR -->
@@ -609,7 +599,7 @@
     <section class="relative py-24 bg-slate-950 text-white overflow-hidden border-t border-slate-900">
         <div class="absolute inset-0 z-0">
             <img 
-                src="https://images.unsplash.com/photo-1541888086425-d81bb19240f5?auto=format&fit=crop&w=1920&q=80" 
+                src="assets/1jv9aqo9.png" 
                 alt="Construction overlay scaffolding background" 
                 class="w-full h-full object-cover opacity-20"
             />
@@ -746,7 +736,7 @@
             }
         });
 
-        // Mobile Drawer Menu State Controller
+               // 4. Mobile Menu Toggle Logic
         const mobileMenuBtn = document.getElementById('mobile-menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
         let isMenuOpen = false;
@@ -754,25 +744,25 @@
         function toggleMenu() {
             isMenuOpen = !isMenuOpen;
             if (isMenuOpen) {
-                // Open menu slide
+                // Open menu
                 mobileMenu.classList.remove('translate-x-full');
                 mobileMenu.classList.add('translate-x-0');
-                // Change icon from hamburger menu to close 'X'
-                mobileMenuBtn.innerHTML = '<i data-lucide="x" class="w-7 h-7 text-white"></i>';
+                // Change icon to X
+                mobileMenuBtn.innerHTML = '<i data-lucide="x" class="w-7 h-7 text-slate-900"></i>';
                 lucide.createIcons();
             } else {
-                // Close menu slide
+                // Close menu
                 mobileMenu.classList.add('translate-x-full');
                 mobileMenu.classList.remove('translate-x-0');
-                // Change icon back to Hamburger Menu
-                mobileMenuBtn.innerHTML = '<i data-lucide="menu" class="w-7 h-7 text-white"></i>';
+                // Change icon back to Menu
+                mobileMenuBtn.innerHTML = '<i data-lucide="menu" class="w-7 h-7 text-slate-900"></i>';
                 lucide.createIcons();
             }
         }
 
         mobileMenuBtn.addEventListener('click', toggleMenu);
 
-        // Terminate drawer session if navigation hooks are utilized on screen
+        // 5. Close Mobile Menu when a link is clicked
         const mobileLinks = document.querySelectorAll('.mobile-link');
         mobileLinks.forEach(link => {
             link.addEventListener('click', () => {
